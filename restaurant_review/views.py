@@ -26,6 +26,20 @@ def details(request, id):
 
 
 
+def update_record(request, id):
+    print('Request for restaurant details page received')
+    
+
+    restaurant = get_object_or_404(Restaurant, pk=id)
+    name=request.POST['restaurantName']
+    restaurant.name=name
+    restaurant.save()
+
+
+    return render(request, 'restaurant_review/details.html', {'restaurant': restaurant})
+
+
+
 def create_restaurant(request):
     print('Request for add restaurant page received')
 

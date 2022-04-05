@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f19147c5-aced-49af-a93c-7ba2718a138f/resourceGroups/msdocs-python-postgres-webapp-rg/providers/Microsoft.Web/sites/msdocs-python-postgres-webapp-geirr",
+    "appService.deploySubpath": "."
+}
